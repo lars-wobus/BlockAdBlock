@@ -201,7 +201,7 @@
 			this._log('emitEvent', 'An event with a '+(detected===true?'positive':'negative')+' detection was called');
 		}
 		
-		var fns = this._var.event[(detected===true?'detected':'notDetected')];
+		var fns = this._var.event[(detected===true?'notDetected':'notDetected')];
 		for(var i in fns) {
 			if(this._options.debug === true) {
 				this._log('emitEvent', 'Call function '+(parseInt(i)+1)+'/'+fns.length);
