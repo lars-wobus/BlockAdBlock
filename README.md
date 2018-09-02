@@ -58,7 +58,7 @@ It means that we don't care so much about the correct spelling of the file.
 ## Remarks
 Because your installing a plugin to manipulate incoming website content, you should be aware of some lacks of security. The browser plugin itself could contain malicious content. Furthermore anyone else having access to your machine and account can add additional files to manipulate web content. If you are afraid of those situations, you can still use another browser for important tasks, for instance to do online banking.
 	
-## How does it work.
+## How does it work
 When visiting a website, a bunch of files is downloaded. Some of them are Javascript files containing application logic. One of the Javascript files might be <i>blockadblock.js</i>. When Resource Override is enabled, it detects the occurrence of specified files and will replace their content with custom versions of it. Other javascript files do not notice the modification. They still calling functions defined in other files will now trigger modified versions of it. In the instant case AdBlock Plus is detected, but instead of calling the proper function, another existing function is called. It looks like AdBlock was not detected
 	
 ## Lessons Learned
